@@ -1,6 +1,6 @@
 {
   "issuerUiUrl": "http://localhost:8000",
-  "issuerApiUrl": "http://localhost:8080/issuer-api/default",
+  "issuerApiUrl": "http://localhost:8081/issuer-api/default",
   "wallets": {
     "waltid": {
       "id": "waltid",
