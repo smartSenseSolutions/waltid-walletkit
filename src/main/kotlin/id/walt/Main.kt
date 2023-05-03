@@ -17,7 +17,7 @@ import id.walt.webwallet.backend.quick.setup.QuickSetupRunCmd
 import kotlinx.coroutines.runBlocking
 
 
-val WALTID_WALLET_BACKEND_PORT = System.getenv("WALTID_WALLET_BACKEND_PORT")?.toIntOrNull() ?: 8080
+val WALTID_WALLET_BACKEND_PORT = System.getenv("WALTID_WALLET_BACKEND_PORT")?.toIntOrNull() ?: 8081
 var WALTID_WALLET_BACKEND_BIND_ADDRESS = System.getenv("WALTID_WALLET_BACKEND_BIND_ADDRESS") ?: "0.0.0.0"
 
 val WALTID_DATA_ROOT = System.getenv("WALTID_DATA_ROOT") ?: "."

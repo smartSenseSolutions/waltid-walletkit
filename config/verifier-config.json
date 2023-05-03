@@ -1,8 +1,9 @@
 {
   "verifierUiUrl": "http://localhost:4000",
-  "verifierApiUrl": "http://localhost:8080/verifier-api/default",
-  "additionalPolicies": [
-  ],
+  // "verifierApiUrl": "http://localhost:8081/verifier-api/web",
+  // "additionalPolicies": [{ "policy": "DidWebPolicy" }],
+  "verifierApiUrl": "http://localhost:8081/verifier-api/default",
+  "additionalPolicies": [],
   "wallets": {
     "waltid": {
       "id": "waltid",

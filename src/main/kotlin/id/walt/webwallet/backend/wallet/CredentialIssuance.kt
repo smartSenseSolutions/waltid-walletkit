@@ -72,6 +72,7 @@ data class CredentialIssuanceSession(
 ) {
     companion object {
         fun fromIssuanceRequest(credentialIssuanceRequest: CredentialIssuanceRequest): CredentialIssuanceSession {
+            print("Inside from issuance request")
             return CredentialIssuanceSession(
                 id = UUID.randomUUID().toString(),
                 issuerId = credentialIssuanceRequest.issuerId,

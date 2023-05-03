@@ -32,7 +32,6 @@ data class Issuables(
     val credentialsByType
         get() = credentials.associateBy { it.type }
      */
-
     companion object {
         fun fromCredentialAuthorizationDetails(credentialDetails: List<CredentialAuthorizationDetails>): Issuables {
             return Issuables(

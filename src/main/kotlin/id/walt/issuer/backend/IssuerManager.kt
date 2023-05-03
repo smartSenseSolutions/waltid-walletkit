@@ -62,10 +62,12 @@ object IssuerManager {
     )
 
     fun listIssuableCredentials(): Issuables {
-        return Issuables(
-            credentials = (IssuerTenant.config.credentialTypes ?: getDefaultCredentialTypes())
+        val list_issue = Issuables(
+            credentials = (getDefaultCredentialTypes())
                 .map { IssuableCredential.fromTemplateId(it) }
         )
+        println("list of issue: $list_issue")
+        return list_issue
     }
 
     private fun prompt(prompt: String, default: String?): String? {
